@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salud sin atajos</title>
+<meta name="description" content="Hábitos sencillos para cuidar tu cuerpo y tu mente, a tu ritmo. Tomar consciencia para construir algo nuevo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#E9ECE6;--paper:#F4F5F1;--ink:#1E2A25;--muted:#56635A;--line:rgba(30,42,37,.14);--hero-bot:#EEE3D6;--horizon:#B7C3C3;--veil:233,236,230;--sun1:#F3CBA8;--sun2:#E9B48C;--sun-rgb:233,180,140;--accent:#E9B48C;--accent-hover:#F0C3A0;--btn-bg:#1E2A25;--btn-fg:#F4F5F1;--btn-hover:#2E3D36;--field:rgba(255,255,255,.55);--tribe-bg:#1E2A25;--tribe-fg:#F4F5F1;--tribe-muted:#B9C3BC;--tribe-line:rgba(244,245,241,.25);--tribe-field:rgba(255,255,255,.06);--tribe-btn-fg:#1E2A25}
+body,div,section,footer,input,button,p,h1,h2,h3,span{transition:background-color .9s ease,color .9s ease,border-color .9s ease}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);-webkit-font-smoothing:antialiased}
+a{color:var(--ink)}a:hover{color:var(--muted)}
+@keyframes rise{from{transform:translate(-50%,110%);opacity:.4}to{transform:translate(-50%,8%);opacity:1}}
+@keyframes sink{from{transform:translate(-50%,8%);opacity:1}to{transform:translate(-50%,70%);opacity:.85}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+
+<div style="background:var(--bg);color:var(--ink);font-family:'Newsreader',Georgia,serif;font-size:19px;line-height:1.65">
+
+<header style="position:absolute;top:0;left:0;right:0;z-index:3">
+  <div style="width:min(68rem,100% - 2.5rem);margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.6rem 0">
+    <a href="#" style="font-size:1.15rem;text-decoration:none;color:var(--ink)">Salud sin atajos</a>
+    <nav style="display:flex;gap:1.6rem;font-family:'Figtree',sans-serif;font-size:.9rem">
+      <a href="#pilares" style="text-decoration:none;color:var(--muted)">Pilares</a>
+      <a href="#sobre-mi" style="text-decoration:none;color:var(--muted)">Sobre mí</a>
+      <a href="#tribu" style="text-decoration:none;color:var(--muted)">Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<section style="position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;background:linear-gradient(180deg,var(--bg) 0%,var(--bg) 45%,var(--hero-bot) 100%)">
+  <div style="position:relative;z-index:2;width:min(68rem,100% - 2.5rem);margin:0 auto;padding:8rem 0 14rem">
+    <h1 style="font-weight:300;font-size:clamp(2.6rem,7vw,5.4rem);line-height:1.08;letter-spacing:-.01em;max-width:14ch;margin:0">Tu salud no tiene atajos. <span style="display:block;color:var(--muted);font-style:italic">Tampoco tiene prisa.</span></h1>
+    <p style="margin:1.8rem 0 0;max-width:30rem;color:var(--muted);font-size:1.25rem">Hábitos sencillos para cuidar tu cuerpo y tu mente, a tu ritmo.</p>
+    <p style="margin:1.4rem 0 0;font-style:italic">Tomar consciencia para construir algo nuevo.</p>
+    <form data-signup style="margin-top:2rem;max-width:32rem">
+      <div data-sent hidden>
+        <p style="font-style:italic;padding:.9rem 1rem;margin:0">Gracias. Te escribiré pronto, sin prisa.</p>
+      </div>
+      <div data-form>
+        <div style="display:flex;flex-wrap:wrap;gap:.5rem;background:var(--field);border:1px solid var(--line);border-radius:28px;padding:.35rem">
+          <input type="email" required placeholder="Tu email" aria-label="Tu email" style="flex:1;min-width:10rem;border:0;background:transparent;font-family:'Figtree',sans-serif;font-size:1rem;padding:.7rem 1rem;color:var(--ink);outline:none">
+          <button type="submit" style="border:0;border-radius:999px;background:var(--btn-bg);color:var(--btn-fg);font-family:'Figtree',sans-serif;font-size:.95rem;font-weight:500;padding:.75rem 1.4rem;cursor:pointer" style-hover="background:var(--btn-hover)">Suscribirme a la newsletter</button>
+        </div>
+        <p style="margin:.8rem 0 0;padding-left:1rem;font-family:'Figtree',sans-serif;font-size:.875rem;line-height:1.5;color:var(--muted)">Una carta tranquila cada dos semanas. Sin spam, sin presión.</p>
+      </div>
+    </form>
+  </div>
+  <div id="heroVideoWrap" aria-hidden="true" style="position:absolute;inset:0;z-index:0;opacity:0;transition:opacity 1.2s ease"><video id="heroVideo" muted loop playsinline preload="auto" style="width:100%;height:100%;object-fit:cover;display:block"></video><div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(var(--veil),.88) 0%,rgba(var(--veil),.6) 50%,rgba(var(--veil),.2) 100%)"></div></div>
+  <div id="sunWrap">
+    <div aria-hidden="true" style="position:absolute;left:0;right:0;bottom:0;height:42%;z-index:1;pointer-events:none">
+      <div style="position:absolute;left:62%;bottom:0;width:clamp(10rem,24vw,19rem);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,var(--sun1) 0%,var(--sun2) 60%,rgba(var(--sun-rgb),0) 72%);transform:translate(-50%,8%);animation:rise 3.2s cubic-bezier(.22,.61,.36,1) .3s both" id="sun"></div>
+      <div style="position:absolute;left:0;right:0;bottom:0;height:30%;background:var(--horizon);border-top:1px solid var(--line)"></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:clamp(5rem,12vw,9rem) 0">
+  <div style="width:min(68rem,100% - 2.5rem);margin:0 auto">
+    <h2 style="font-weight:300;font-size:clamp(2.2rem,5.4vw,3.8rem);line-height:1.1;letter-spacing:-.01em;max-width:16ch;margin:0">Tomar consciencia para construir algo nuevo.</h2>
+    <div style="max-width:36rem;margin:2rem 0 0 auto">
+      <p style="margin:0">Vivimos deprisa, sin mirarnos, pasando de un estímulo a otro. Un reel a medias, otro, otro más.</p>
+      <p style="margin:1.1rem 0 0">El primer paso no es cambiarlo todo. Es darte cuenta: pararte, respirar y escuchar qué te está pidiendo tu cuerpo. A partir de ahí, construyes. Un hábito, un día, una elección cada vez.</p>
+      <p style="margin:1.1rem 0 0">Habrá días en que no salga. No pasa nada. Lo importante es no engañarte, no dejarlo siempre para mañana y volver al camino.</p>
+      <p style="margin:2rem 0 0;font-style:italic">Ocúpate de lo que depende de ti. Lo demás, suéltalo.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pilares" style="background:var(--paper);padding:clamp(5rem,12vw,9rem) 0">
+  <div style="width:min(68rem,100% - 2.5rem);margin:0 auto">
+    <h2 style="font-weight:400;font-size:clamp(2rem,4.6vw,3.1rem);line-height:1.12;letter-spacing:-.01em;margin:0 0 1.6rem">Cinco pilares</h2>
+    <p style="max-width:36rem;color:var(--muted);margin:0">Se sostienen entre sí. No hace falta empezar por todos: basta con uno.</p>
+    <div style="margin-top:3rem;border-top:1px solid var(--line)">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:.6rem 3rem;padding:1.8rem 0;border-bottom:1px solid var(--line);align-items:baseline">
+        <h3 style="margin:0;font-weight:300;font-size:clamp(1.5rem,3vw,2rem)">Descanso</h3>
+        <p style="margin:0;color:var(--muted);max-width:32rem">Dormir bien es la base de todo lo demás. Sin descanso no hay voluntad que aguante.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:.6rem 3rem;padding:1.8rem 0;border-bottom:1px solid var(--line);align-items:baseline">
+        <h3 style="margin:0;font-weight:300;font-size:clamp(1.5rem,3vw,2rem)">Alimentación</h3>
+        <p style="margin:0;color:var(--muted);max-width:32rem">Comida real que nutre y se disfruta. Comer rico, muy rico, sin culpa y sin dogmas.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:.6rem 3rem;padding:1.8rem 0;border-bottom:1px solid var(--line);align-items:baseline">
+        <h3 style="margin:0;font-weight:300;font-size:clamp(1.5rem,3vw,2rem)">Movimiento</h3>
+        <p style="margin:0;color:var(--muted);max-width:32rem">Entrenar para vivir mejor, no para castigarte. Correr, levantar peso, moverte con tu propio cuerpo.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:.6rem 3rem;padding:1.8rem 0;border-bottom:1px solid var(--line);align-items:baseline">
+        <h3 style="margin:0;font-weight:300;font-size:clamp(1.5rem,3vw,2rem)">Mente</h3>
+        <p style="margin:0;color:var(--muted);max-width:32rem">Respirar, escribir, meditar. Un café caliente en silencio antes de que empiece el día.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:.6rem 3rem;padding:1.8rem 0;border-bottom:1px solid var(--line);align-items:baseline">
+        <h3 style="margin:0;font-weight:300;font-size:clamp(1.5rem,3vw,2rem)">Exposición</h3>
+        <p style="margin:0;color:var(--muted);max-width:32rem">Luz natural, frío, calor. Volver a lo que tu cuerpo ya conoce.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre-mi" style="padding:clamp(5rem,12vw,9rem) 0">
+  <div style="width:min(68rem,100% - 2.5rem);margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));gap:clamp(2rem,6vw,6rem);align-items:center">
+    <div style="aspect-ratio:4/5;background:#D9D2C6;overflow:hidden;border-radius:2px;max-width:30rem">
+      <img src="daniel.jpg" alt="Daniel sonriendo en un camino junto a la costa" style="width:100%;height:100%;object-fit:cover;object-position:50% 72%;display:block">
+    </div>
+    <div style="max-width:36rem">
+      <h2 style="font-weight:400;font-size:clamp(2rem,4.6vw,3.1rem);line-height:1.12;letter-spacing:-.01em;margin:0 0 1.6rem">Hola, soy Daniel.</h2>
+      <p style="margin:0">Me gustan los amaneceres, el café caliente antes de que empiece el día y entrenar al aire libre.</p>
+      <p style="margin:1.1rem 0 0">Estudio Dietética y aplico cada día lo que comparto aquí: correr, gimnasio, calistenia, comida real y mucho descanso.</p>
+      <p style="margin:1.1rem 0 0">No tengo atajos que venderte. Solo un camino que yo también recorro.</p>
+    </div>
+  </div>
+</section>
+
+<section id="tribu" style="background:var(--tribe-bg);color:var(--tribe-fg);text-align:center;padding:clamp(5rem,12vw,9rem) 0">
+  <div style="width:min(68rem,100% - 2.5rem);margin:0 auto">
+    <h2 style="font-weight:300;font-size:clamp(2rem,4.6vw,3.1rem);line-height:1.12;letter-spacing:-.01em;max-width:20ch;margin:0 auto 1.6rem">Únete a la tribu: suscríbete a la newsletter</h2>
+    <p style="color:var(--tribe-muted);max-width:30rem;margin:0 auto">No estás solo. Aquí también nos gusta ver amanecer, parar en un atardecer y dejar solo una luz roja por la noche.</p>
+    <form data-signup style="margin:2.4rem auto 0;max-width:32rem;text-align:left">
+      <div data-sent hidden>
+        <p style="font-style:italic;padding:.9rem 1rem;margin:0;text-align:center">Ya formas parte. Te escribiré pronto.</p>
+      </div>
+      <div data-form>
+        <div style="display:flex;flex-wrap:wrap;gap:.5rem;background:var(--tribe-field);border:1px solid var(--tribe-line);border-radius:28px;padding:.35rem">
+          <input type="email" required placeholder="Tu email" aria-label="Tu email" style="flex:1;min-width:10rem;border:0;background:transparent;font-family:'Figtree',sans-serif;font-size:1rem;padding:.7rem 1rem;color:var(--tribe-fg);outline:none">
+          <button type="submit" style="border:0;border-radius:999px;background:var(--accent);color:var(--tribe-btn-fg);font-family:'Figtree',sans-serif;font-size:.95rem;font-weight:500;padding:.75rem 1.4rem;cursor:pointer" style-hover="background:var(--accent-hover)">Suscribirme a la newsletter</button>
+        </div>
+        <p style="margin:.8rem 0 0;font-family:'Figtree',sans-serif;font-size:.875rem;line-height:1.5;color:var(--tribe-muted);text-align:center">Puedes darte de baja cuando quieras.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer style="background:var(--tribe-bg);color:var(--tribe-muted);border-top:1px solid var(--tribe-line)">
+  <div style="width:min(68rem,100% - 2.5rem);margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding:2rem 0;font-family:'Figtree',sans-serif;font-size:.85rem">
+    <span>© 2026 Salud sin atajos</span>
+    <nav style="display:flex;gap:1.4rem">
+      <a href="https://www.instagram.com/d.becedillas/" target="_blank" style="text-decoration:none;color:var(--tribe-muted)">Instagram</a>
+      <a href="#" style="text-decoration:none;color:var(--tribe-muted)">Aviso legal</a>
+      <a href="#" style="text-decoration:none;color:var(--tribe-muted)">Privacidad</a>
+    </nav>
+  </div>
+</footer>
+<div id="themes" role="group" aria-label="Momento del día" style="position:fixed;right:1rem;bottom:1rem;z-index:10;display:flex;gap:.2rem;padding:.25rem;border-radius:999px;background:var(--paper);border:1px solid var(--line);box-shadow:0 4px 18px rgba(0,0,0,.08)"><button type="button" data-theme="dawn" style="border:0;cursor:pointer;font-family:'Figtree',sans-serif;font-size:.8rem;padding:.45rem .8rem;border-radius:999px;background:transparent;color:var(--muted)">Amanecer</button><button type="button" data-theme="day" style="border:0;cursor:pointer;font-family:'Figtree',sans-serif;font-size:.8rem;padding:.45rem .8rem;border-radius:999px;background:transparent;color:var(--muted)">Día</button><button type="button" data-theme="dusk" style="border:0;cursor:pointer;font-family:'Figtree',sans-serif;font-size:.8rem;padding:.45rem .8rem;border-radius:999px;background:transparent;color:var(--muted)">Atardecer</button><button type="button" data-theme="night" style="border:0;cursor:pointer;font-family:'Figtree',sans-serif;font-size:.8rem;padding:.45rem .8rem;border-radius:999px;background:transparent;color:var(--muted)">Noche</button></div>
+</div>
+
+<script>
+(function(){
+  var THEMES={
+    dawn: { bg:'#E9ECE6', paper:'#F4F5F1', ink:'#1E2A25', muted:'#56635A', line:'rgba(30,42,37,.14)', 'hero-bot':'#EEE3D6', horizon:'#B7C3C3', veil:'233,236,230', sun1:'#F3CBA8', sun2:'#E9B48C', 'sun-rgb':'233,180,140', accent:'#E9B48C', 'accent-hover':'#F0C3A0', 'btn-bg':'#1E2A25', 'btn-fg':'#F4F5F1', 'btn-hover':'#2E3D36', field:'rgba(255,255,255,.55)', 'tribe-bg':'#1E2A25', 'tribe-fg':'#F4F5F1', 'tribe-muted':'#B9C3BC', 'tribe-line':'rgba(244,245,241,.25)', 'tribe-field':'rgba(255,255,255,.06)', 'tribe-btn-fg':'#1E2A25' },
+    day: { bg:'#F6F3EA', paper:'#FBFAF5', ink:'#1E2A25', muted:'#56635A', line:'rgba(30,42,37,.14)', 'hero-bot':'#F7EBC8', horizon:'#C9D6D0', veil:'246,243,234', sun1:'#FBE9A8', sun2:'#F2CF6B', 'sun-rgb':'242,207,107', accent:'#F2CF6B', 'accent-hover':'#F7DB8C', 'btn-bg':'#1E2A25', 'btn-fg':'#FBFAF5', 'btn-hover':'#2E3D36', field:'rgba(255,255,255,.7)', 'tribe-bg':'#1E2A25', 'tribe-fg':'#FBFAF5', 'tribe-muted':'#B9C3BC', 'tribe-line':'rgba(244,245,241,.25)', 'tribe-field':'rgba(255,255,255,.06)', 'tribe-btn-fg':'#1E2A25' },
+    dusk: { bg:'#EFE4DC', paper:'#F6EFEA', ink:'#2A1F22', muted:'#6B5A5C', line:'rgba(42,31,34,.16)', 'hero-bot':'#E8B9A0', horizon:'#A89AA3', veil:'239,228,220', sun1:'#F0B79A', sun2:'#D9825F', 'sun-rgb':'217,130,95', accent:'#E39A78', 'accent-hover':'#EBAE91', 'btn-bg':'#2A1F22', 'btn-fg':'#F6EFEA', 'btn-hover':'#3D2D31', field:'rgba(255,255,255,.55)', 'tribe-bg':'#2A1F22', 'tribe-fg':'#F6EFEA', 'tribe-muted':'#CDBDBA', 'tribe-line':'rgba(246,239,234,.25)', 'tribe-field':'rgba(255,255,255,.06)', 'tribe-btn-fg':'#2A1F22' },
+    night: { bg:'#141C18', paper:'#1A2420', ink:'#EDE9DF', muted:'#A7B2AA', line:'rgba(237,233,223,.14)', 'hero-bot':'#241A19', horizon:'#0E1411', veil:'20,28,24', sun1:'#C9604F', sun2:'#8E3A32', 'sun-rgb':'142,58,50', accent:'#D87062', 'accent-hover':'#E38476', 'btn-bg':'#EDE9DF', 'btn-fg':'#141C18', 'btn-hover':'#FFFFFF', field:'rgba(255,255,255,.06)', 'tribe-bg':'#0E1411', 'tribe-fg':'#EDE9DF', 'tribe-muted':'#A7B2AA', 'tribe-line':'rgba(237,233,223,.22)', 'tribe-field':'rgba(255,255,255,.05)', 'tribe-btn-fg':'#141C18' } };
+  function auto(){var h=new Date().getHours();return h>=5&&h<9?'dawn':h>=9&&h<17?'day':h>=17&&h<21?'dusk':'night';}
+  var cur=auto(),root=document.documentElement.style;
+  var buttons=[].slice.call(document.querySelectorAll('[data-theme]'));
+  var video=document.getElementById('heroVideo'),vwrap=document.getElementById('heroVideoWrap'),sun=document.getElementById('sun'),sunWrap=document.getElementById('sunWrap');
+  var videoFailed=false;
+  function apply(k){
+    cur=k;var th=THEMES[k];
+    Object.keys(th).forEach(function(n){root.setProperty('--'+n,th[n]);});
+    buttons.forEach(function(b){var on=b.dataset.theme===k;b.style.background=on?'var(--ink)':'transparent';b.style.color=on?'var(--bg)':'var(--muted)';});
+    var early=(k==='dawn'||k==='day');
+    if(sun){sun.style.animation='none';void sun.offsetWidth;sun.style.animation=(early?'rise':'sink')+' 3.2s cubic-bezier(.22,.61,.36,1) .3s both';}
+    if(video&&!videoFailed){
+      var src=early?'videos/amanecer.mp4':'videos/atardecer.mp4';
+      if(video.getAttribute('src')!==src){vwrap.style.opacity=0;video.setAttribute('src',src);video.play&&video.play().catch(function(){});}
+    }
+  }
+  if(video){
+    video.addEventListener('loadeddata',function(){vwrap.style.opacity=1;if(sunWrap)sunWrap.style.opacity=0;});
+    video.addEventListener('error',function(){videoFailed=true;vwrap.style.opacity=0;if(sunWrap)sunWrap.style.opacity=1;});
+  }
+  if(sunWrap)sunWrap.style.transition='opacity 1.2s ease';
+  buttons.forEach(function(b){b.addEventListener('click',function(){apply(b.dataset.theme);});});
+  apply(cur);
+  // Maqueta: muestra el mensaje de gracias sin enviar nada.
+  // Para conectar MailerLite, sustituye el action del formulario por el endpoint que te da MailerLite y elimina este bloque.
+  [].forEach.call(document.querySelectorAll('[data-signup]'),function(f){
+    f.addEventListener('submit',function(e){e.preventDefault();f.querySelector('[data-form]').hidden=true;f.querySelector('[data-sent]').hidden=false;});
+  });
+})();
+</script>
+</body>
+</html>
